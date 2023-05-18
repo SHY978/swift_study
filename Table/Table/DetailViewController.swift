@@ -9,6 +9,8 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    var receiveItem = ""
+    
     @IBOutlet weak var lblItem: UILabel!
     
     
@@ -16,9 +18,12 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        lblItem.text = receiveItem
     }
     
-
+    func receiveItem(_ item: String){
+        receiveItem = item
+    }
     /*
     // MARK: - Navigation
 
