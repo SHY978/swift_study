@@ -12,6 +12,7 @@ import SDWebImage
 class TableViewController: UITableViewController {
     
     
+    @IBOutlet weak var searchBar: UISearchBar!
     var articles : [Article]? = []
     
     @IBOutlet var tvList: UITableView!
@@ -19,7 +20,7 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let urlString = "https://newsapi.org/v2/everything?q=tesla&from=2023-04-25&sortBy=publishedAt&apiKey=7abc8302df554428ae88c12648b9d95b"
+        let urlString = "https://newsapi.org/v2/everything?q=tesla&from=2023-05-31&sortBy=publishedAt&apiKey=7abc8302df554428ae88c12648b9d95b"
         
         let url = URL(string: urlString)
         
